@@ -1,7 +1,14 @@
 <html>
 <body>
 TEST2
-  <script>alert(1)</script>
+  <script>
+  var request = new XMLHttpRequest();
+request.open('GET', 'https://5e0d086dee932546765dba15b5d1b63c.m.pipedream.net')
+request.send();
+request.onload = ()=>{
+    console.log(JSON.parse(request.response));
+}
+  </script>
 <body>
 
 <html>
